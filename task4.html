@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth System</title>
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Login Form -->
+        <div class="form-container sign-in-container" id="loginForm">
+            <form action="#">
+                <h1>Sign in</h1>
+                <span>Use your account</span>
+                <input type="email" placeholder="Email" id="loginEmail" required />
+                <input type="password" placeholder="Password" id="loginPassword" required />
+                <button type="button" id="loginBtn">Sign In</button>
+            </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-container sign-up-container" id="registerForm">
+            <form action="#">
+                <h1>Create Account</h1>
+                <span>Use your email for registration</span>
+                <input type="text" placeholder="Name" id="registerName" required />
+                <input type="email" placeholder="Email" id="registerEmail" required />
+                <input type="password" placeholder="Password" id="registerPassword" required />
+                <button type="button" id="registerBtn">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Overlay Container -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details to get started</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="task4.js"></script>
+</body>
+</html>
