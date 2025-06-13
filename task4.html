@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+    <div class="container" id="auth-container">
+        <div class="form-container" id="login-form">
+            <h1>Welcome Back</h1>
+            
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" placeholder="Enter your email">
+                <div class="error" id="login-email-error">Please enter a valid email</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password">
+                <div class="error" id="login-password-error">Please enter your password</div>
+                <div class="error" id="login-error">Invalid email or password</div>
+            </div>
+            
+            <button class="btn btn-primary" id="login-btn">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </button>
+            
+            <div class="social-login">
+                <div class="divider">OR CONTINUE WITH</div>
+                
+                <div class="social-buttons">
+                    <button class="social-btn google" id="google-btn">
+                        <i class="fab fa-google"></i>
+                    </button>
+                    <button class="social-btn github" id="github-btn">
+                        <i class="fab fa-github"></i>
+                    </button>
+                    <button class="social-btn apple" id="apple-btn">
+                        <i class="fab fa-apple"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="toggle-form">
+                Don't have an account? <a id="show-register">Sign up</a>
+            </div>
+        </div>
+        
+        <div class="form-container" id="register-form" style="display: none;">
+            <h1>Create Account</h1>
+            
+            <div class="form-group">
+                <label for="register-name">Name</label>
+                <input type="text" id="register-name" placeholder="Enter your name">
+                <div class="error" id="register-name-error">Please enter your name</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" placeholder="Enter your email">
+                <div class="error" id="register-email-error">Please enter a valid email</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" placeholder="Create a password">
+                <div class="error" id="register-password-error">Password must be at least 6 characters</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="register-confirm-password">Confirm Password</label>
+                <input type="password" id="register-confirm-password" placeholder="Confirm your password">
+                <div class="error" id="register-confirm-error">Passwords don't match</div>
+            </div>
+            
+            <button class="btn btn-primary" id="register-btn">
+                <i class="fas fa-user-plus"></i> Sign Up
+            </button>
+            
+            <div class="success" id="register-success">Registration successful! You can now login.</div>
+            
+            <div class="social-login">
+                <div class="divider">OR SIGN UP WITH</div>
+                
+                <div class="social-buttons">
+                    <button class="social-btn google" id="google-btn-register">
+                        <i class="fab fa-google"></i>
+                    </button>
+                    <button class="social-btn github" id="github-btn-register">
+                        <i class="fab fa-github"></i>
+                    </button>
+                    <button class="social-btn apple" id="apple-btn-register">
+                        <i class="fab fa-apple"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="toggle-form">
+                Already have an account? <a id="show-login">Sign in</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="secured-page" style="display: none;">
+        <div class="secured-page">
+            <h1>Welcome to Your Dashboard</h1>
+            <p>You have successfully logged in to your account.</p>
+            
+            <div class="user-info">
+                <p><span>Status:</span> Authenticated</p>
+                <p><span>Session:</span> Active</p>
+            </div>
+            
+            <button class="btn btn-danger" id="logout-btn">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+        </div>
+    </div>
+
+    <script src="task4.js"></script>
+</body>
+</html>
