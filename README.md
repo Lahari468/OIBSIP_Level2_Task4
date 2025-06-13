@@ -3,8 +3,6 @@
 
 A modern, responsive, and clean authentication interface built using **HTML**, **CSS**, and **JavaScript**. It features user registration, login, localStorage-based session management, and simulated social login options.
 
----
-
 ## ✨ Features
 
 - 👤 **User Registration & Login**  
@@ -20,7 +18,6 @@ A modern, responsive, and clean authentication interface built using **HTML**, *
   Fully mobile-friendly with a clean modern look.
 -  🗃️ **LocalStorage** for session simulation
   
----
 
 ## 🛠️ Tech Stack
 
@@ -28,7 +25,6 @@ A modern, responsive, and clean authentication interface built using **HTML**, *
 - **JavaScript**: Vanilla JS (DOM manipulation, validation, storage)
 - **Icons**: Font Awesome CDN
 
----
 ## 🖼️ Preview
 
 > ![Preview Screenshot](preview.png)
