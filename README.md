@@ -1,5 +1,5 @@
 # OIBSIP_Level2_Task4
-# 🔐 Modern Auth System
+# 🔐 Authentication System
 
 A modern, responsive, and clean authentication interface built using **HTML**, **CSS**, and **JavaScript**. It features user registration, login, localStorage-based session management, and simulated social login options.
 
